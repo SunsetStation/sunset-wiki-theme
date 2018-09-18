@@ -7,8 +7,8 @@ import requests
 def main():
     url = 'https://cssminifier.com/raw'
     data = {'input': open('vector.css', 'rb').read()}
-
     response = requests.post(url, data=data)
+
     minified = open('vector-minified.css', 'w+')
     minified.write(response.text)
     minified.close()
