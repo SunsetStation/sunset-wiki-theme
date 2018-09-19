@@ -4,7 +4,7 @@ https://www.mediawiki.org/wiki/User:Malvineous
 
 /* changes the default font used for MediaWiki to Noto Sans (does not include headings or monospaced text) */
 
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif") body {
+@import url("https://fonts.googleapis.com/css?family=Archivo:600") body {
     font-family: "Noto Sans", sans-serif !important
 }
 
@@ -13,7 +13,7 @@ https://www.mediawiki.org/wiki/User:Malvineous
 
 div#content h1,
 div#content h2 {
-    font-family: "Noto Serif", serif !important
+    font-family: "Archivo", serif !important
 }
 
 h1,
@@ -136,10 +136,10 @@ ul.mw-gallery-packed-hover li.gallerybox.mw-gallery-focused div.gallerytextwrapp
 #left-navigation div.vectorTabs ul li,
 #right-navigation div.vectorTabs ul li {
     background-color: #222;
-    background-image: -moz-linear-gradient(top, #2e2e2e 20%, #222 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #2e2e2e), color-stop(100%, #222));
-    background-image: -webkit-linear-gradient(top, #2e2e2e 20%, #222 100%);
-    background-image: linear-gradient(#2e2e2e 20%, #222 100%)
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
 }
 
 #left-navigation div.vectorTabs li.new a,
@@ -152,10 +152,6 @@ ul.mw-gallery-packed-hover li.gallerybox.mw-gallery-focused div.gallerytextwrapp
 #left-navigation div.vectorTabs li.selected,
 #right-navigation div.vectorTabs li.selected {
     background-color: #333;
-    background-image: -moz-linear-gradient(top, #e69710 0, #333 10%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e69710), color-stop(10%, #333));
-    background-image: -webkit-linear-gradient(top, #e69710 0, #333 10%);
-    background-image: linear-gradient(#e69710 0, #333 10%)
 }
 
 #left-navigation div.vectorTabs li.selected a,
@@ -234,7 +230,7 @@ body {
 }
 
 body {
-    background-color: #2a2a2a
+    background-color: #222;
 }
 
 .mw-body {
@@ -417,9 +413,9 @@ body.vector-animateLayout #mw-head-base {
     background-position: left top;
     background-repeat: no-repeat;
     background-image: url('skins/Vector/images/user-icon.png');
-    background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/user-icon.svg');
-    background-image: linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/user-icon.svg');
     padding-left: 15px !important
 }
@@ -510,9 +506,9 @@ div#simpleSearch #mw-searchButton {
     white-space: nowrap;
     overflow: hidden;
     background-image: url('skins/Vector/images/search-ltr.png');
-    background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/search-ltr.svg');
-    background-image: linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/search-ltr.svg');
     background-position: center center;
     background-repeat: no-repeat
@@ -529,8 +525,6 @@ div.vectorTabs h3 {
 div.vectorTabs {
     float: left;
     height: 2.5em;
-    background-image: /* @embed */
-    url('skins/Vector/images/tab-break.png');
     background-position: bottom left;
     background-repeat: no-repeat;
     padding-left: 1px
@@ -543,8 +537,8 @@ div.vectorTabs ul {
     list-style-image: none;
     margin: 0;
     padding: 0;
-    background-image: /* @embed */
-    url('skins/Vector/images/tab-break.png');
+    background-image: none;
+    
     background-position: right bottom;
     background-repeat: no-repeat
 }
@@ -557,8 +551,7 @@ div.vectorTabs ul li {
     margin: 0;
     padding: 0;
     background-color: #f3f3f3;
-    background-image: /* @embed */
-    url('skins/Vector/images/tab-normal-fade.png');
+    background-image: none;
     background-position: bottom left;
     background-repeat: repeat-x;
     white-space: nowrap
@@ -574,8 +567,7 @@ div.vectorTabs li.new a:visited {
 }
 
 div.vectorTabs li.selected {
-    background-image: /* @embed */
-    url('skins/Vector/images/tab-current-fade.png')
+    background-image: none;
 }
 
 div.vectorTabs li.selected a,
@@ -605,8 +597,7 @@ div.vectorTabs li>a {
 
 div.vectorTabs span {
     display: inline-block;
-    background-image: /* @embed */
-    url('skins/Vector/images/tab-break.png');
+    background-image: none;
     background-position: bottom right;
     background-repeat: no-repeat
 }
@@ -634,8 +625,7 @@ body.rtl div.vectorMenu {
 
 div#mw-head div.vectorMenu h3 {
     float: left;
-    background-image: /* @embed */
-    url('skins/Vector/images/tab-break.png');
+    background-image: none;
     background-repeat: no-repeat;
     background-position: bottom right;
     margin-left: -1px;
@@ -662,9 +652,9 @@ div.vectorMenu h3 a {
     width: 20px;
     height: 2.5em;
     background-image: url('skins/Vector/images/arrow-down-icon.png');
-    background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/arrow-down-icon.svg');
-    background-image: linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/arrow-down-icon.svg');
     background-position: 100% 70%;
     background-repeat: no-repeat;
@@ -680,9 +670,9 @@ div.vectorMenu.menuForceShow h3 a {
 
 div.vectorMenuFocus h3 a {
     background-image: url('skins/Vector/images/arrow-down-focus-icon.png');
-    background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/arrow-down-focus-icon.svg');
-    background-image: linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/arrow-down-focus-icon.svg')
 }
 
@@ -816,44 +806,44 @@ div.vectorMenu li.selected a:visited {
 
 #ca-unwatch.icon a {
     background-image: url('skins/Vector/images/unwatch-icon.png');
-    background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/unwatch-icon.svg');
-    background-image: linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/unwatch-icon.svg')
 }
 
 #ca-watch.icon a {
     background-image: url('skins/Vector/images/watch-icon.png');
-    background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/watch-icon.svg');
-    background-image: linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/watch-icon.svg')
 }
 
 #ca-unwatch.icon a:hover,
 #ca-unwatch.icon a:focus {
     background-image: url('skins/Vector/images/unwatch-icon-hl.png');
-    background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/unwatch-icon-hl.svg');
-    background-image: linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/unwatch-icon-hl.svg')
 }
 
 #ca-watch.icon a:hover,
 #ca-watch.icon a:focus {
     background-image: url('skins/Vector/images/watch-icon-hl.png');
-    background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/watch-icon-hl.svg');
-    background-image: linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/watch-icon-hl.svg')
 }
 
 #ca-unwatch.icon a.loading,
 #ca-watch.icon a.loading {
     background-image: url('skins/Vector/images/watch-icon-loading.png');
-    background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/watch-icon-loading.svg');
-    background-image: linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/watch-icon-loading.svg');
     -webkit-animation: rotate 700ms infinite linear;
     -moz-animation: rotate 700ms infinite linear;
@@ -882,12 +872,11 @@ div.vectorMenu li.selected a:visited {
     background-position: bottom left;
     background-repeat: repeat-x;
     background-image: url('skins/Vector/images/page-fade.png');
-    background-color: #2a2a2a;
-    background-image: -moz-linear-gradient(top, #333 50%, #2a2a2a 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #333), color-stop(100%, #2a2a2a));
-    background-image: -webkit-linear-gradient(top, #333 50%, #2a2a2a 100%);
-    background-image: linear-gradient(#333 50%, #2a2a2a 100%);
-    background-color: #333
+    background-color: #222;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
 }
 
 #mw-head-base {
@@ -1060,9 +1049,9 @@ body.ltr div#footer #footer-places {
     background-position: center right;
     background-repeat: no-repeat;
     background-image: url('skins/Vector/images/external-link-ltr-icon.png');
-    background-image: -webkit-linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/external-link-ltr-icon.svg');
-    background-image: linear-gradient(transparent, transparent), /* @embed */
+    background-image: none;
     url('skins/Vector/images/external-link-ltr-icon.svg');
     padding-right: 13px
 }
